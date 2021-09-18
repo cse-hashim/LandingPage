@@ -270,12 +270,13 @@ const getCurrentActive = () => {
                 topBtn.innerHTML = 'TOP';
                 topBtn.classList.add('top-btn');
                 topBtn.addEventListener('click', () => {
+                    document.documentElement.scrollTop = 0;
                     document.body.scrollTop = 0;
                     setActive(sectionList[0]);
                 });
                 topBtn.style.visibility = 'hidden';
                 document.body.append(topBtn);
-            }, 0);
+            }, 300);
         }).then(() => {
             //nav bar hover prevent hide on start
             if (!navBarMenu.matches(':hover')) {

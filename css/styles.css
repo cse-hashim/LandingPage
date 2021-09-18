@@ -278,7 +278,6 @@ section.active {
 
 .js {
     color: brown;
-    animation: pound .35s infinite alternate;
 }
 
 section.active .landing__container::before {
@@ -299,11 +298,5 @@ section.active .landing__container::after {
     }
     to {
         transform: rotate(360deg) translate(-1em) rotate(-360deg);
-    }
-}
-
-@keyframes pound {
-    to {
-        transform: scale(2);
     }
 }
